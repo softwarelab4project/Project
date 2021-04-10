@@ -6,8 +6,6 @@ import pickle
 import numpy as np
 import flask
 from flask import request,jsonify
-nltk.download('punkt')
-nltk.download('wordnet')
 
 from keras.models import load_model
 model = load_model('chatbot_model.h5')
