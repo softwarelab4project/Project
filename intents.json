@@ -1,0 +1,434 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi there",
+          "Hello there",
+          "How are you",
+          "Is anyone there?",
+          "Hey",
+          "Hola",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hello, thanks for asking . This is a  student specific ChatBot",
+          "Good to see you again . This is a  student specific ChatBot",
+          "Hi there, how can I help? . This is a  student specific ChatBot"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Awesome, thanks",
+          "Thanks for helping me"
+        ],
+        "responses": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": [
+          "Sorry, can't understand you",
+          "Please give me more info",
+          "Not sure I understand"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "options",
+        "patterns": [
+          "How you could help me?",
+          "What you can do?",
+          "What is your purpose?",
+          "What help you provide?",
+          "How you can be helpful?",
+          "What support is offered",
+          "Help me"
+        ],
+        "responses": [
+          "I can guide you through resources for studying, find hotspots near the college, cheer you up with some fun facts and jokes, manage your timetable and a lot more!",
+          "I can provide you help with college related activites",
+          "I am the goto tool for assisting freshers to get accomodated with VNIT and Nagpur",
+          "I can make your day by telling you a joke!",
+          "Would you like to hear a fun fact?",
+          "I can keep track of your timetable",
+          "I can provide you with good study resources",
+          "I can keep track of college events!"
+        ],
+        "context": [
+          ""
+        ]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {"tag": "exam_greetings",
+        "patterns": ["I have exam","Sir has announced surprise test","Midsem Endsem is next week"],
+        "responses": ["All the best!","Best of Luck!","Lots of luck!"],
+        "context": [""]
+    },
+
+    {"tag": "exam_tips",
+        "patterns": ["How should I prepare","Give me some exam tips","What should I do to get good marks","good Score"],
+        "responses": ["Read notes thoroughly","Solve numericals","Start preparing atleast a week earlier"],
+        "context": [""]
+    },
+    {"tag": "quotes",
+        "patterns": ["Inspiraionl", "Motivational", "Good thoughts","Quotes"],
+        "responses": ["The expert in everything was once a beginner", "Stop dreaming, Start doing", "A minute wasted is an eternal loss"],
+        "context": [""]
+    },
+
+
+
+
+    {"tag": "Anime",
+        "patterns": ["recommend me a good anime","do you know any good anime?"],
+        "responses": ["Attack on Titan is good","One piece is one of the best","Naruto is very popular"],
+        "context": [""]
+    },
+    {"tag": "movie",
+        "patterns": ["recommend me a good movie","do you know any good movie?"],
+        "responses": ["Avengers is good","Star wars is one of the best","Bahubali is very popular"],
+        "context": [""]
+    },
+    {"tag": "tv_series",
+        "patterns": ["recommend me some good series","do you know any good "],
+        "responses": ["Breaking bad is good","TMKOC is one of the best","Game of thrones is very popular"],
+        "context": [""]
+    },
+    {"tag": "bored",
+        "patterns": ["I am bored","I am exhausted","tired","I want some entertainment"],
+        "responses": ["Watch a movie","Watch a good anime","Watch a tv series","Read a book"],
+        "context": [""]
+    },
+    {"tag": "book",
+        "patterns": ["recommend me a good book","Somthing to read","self help books"],
+        "responses": ["Think and Grow rich is very good book","Power of Habit is good book"],
+        "context": [""]
+    },
+    {"tag": "exercise",
+        "patterns": ["How to get six packs","Exercise tips","How to get healthy","weight loss"],
+        "responses": ["Exercise daily","Do 20 pushups","Cycling is good choice","don't eat fast food"],
+        "context": [""]
+    },
+
+
+
+
+    {"tag": "canteen",
+        "patterns": ["Where is college canteen", "where is canteen", "can i get food","Show me direction of canteen","is there a college canteen"],
+        "responses": ["College canteen is near the gym. Location: https://www.google.com/maps/place/VNIT+Canteen/@21.1243094,79.0471365,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4c076ce3aaf7b:0x4af3713120c3ccf9!8m2!3d21.1243044!4d79.0493305"],
+        "context": [""]
+       },
+       {"tag": "gym",
+        "patterns": ["is there gym in college", "dumbles", "curl-bar", "weights", "trainer","yogs-mat","body building","muscle","gym near me"],
+        "responses": ["VNIT has a gym. Location:https://www.google.com/maps/place/VNIT+Health+Club/@21.1243342,79.0405435,15z/data=!4m8!1m2!2m1!1sVNIT+gym!3m4!1s0x3bd4c0772ffb682f:0x99ba83ee1520182f!8m2!3d21.1242914!4d79.0511349"],
+        "context": [""]
+       },
+       {"tag": "store",
+        "patterns": ["general store", "bazar", "stationery", "food packets", "drinks","project papers","graph paper","drawing board"],
+        "responses": ["The general store is available on campus and is near 1st year hostel"],
+        "context": [""]
+       },
+       {"tag": "library",
+        "patterns": ["library", "study room", "computer room","zerox","printing","books","old newspaper"],
+        "responses": ["Vnit library Location: https://www.google.com/maps/place/VNIT+Library/@21.125287,79.0492682,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4c070cc6bf487:0x3ce053b3ec61c572!8m2!3d21.125282!4d79.0514622"],
+        "context": [""]
+       },
+       {"tag": "academic office",
+        "patterns": ["academic office", "exam centre", "fees queries", "training centre", "placment office","student centre","admission"],
+        "responses": ["VNIT's academic centre. Location:https://www.google.com/maps/place/VNIT+Administrative+Building/@21.1233052,79.0493436,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4c077146a03d1:0xe85b8daf9dcb0c8d!8m2!3d21.1233002!4d79.0515376"],
+        "context": [""]
+       },
+       {"tag": "sports",
+        "patterns": ["running ground", "walking", "football", "cricket", "badminton","table tennis","volleyball","basketball","kabaddi","sports ground","ground","ball"],
+        "responses": ["We have a big sports ground at the entrance of Bajaj Nagar gate"],
+        "context": [""]
+       },
+       {"tag": "healthcare",
+        "patterns": ["health","doctor", "nurse", "healthcare", "medicine", "sick","checkup","hospital","medical","unwell","disease","infection","weakness"],
+        "responses": ["Hurry up and check your health at Vnit Healthcare. Location: https://www.google.com/maps/place/VNIT+Health+Center,+Ambazari,+Nagpur,+Maharashtra+440010/@21.1263169,79.047891,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4c0712203b427:0xf31793db74d134d1!8m2!3d21.1263119!4d79.050085"],
+        "context": [""]
+       },
+       {"tag": "security",
+        "patterns": ["security","harrasment", "guard", "police", "emergency", "bag form","leaving for home","ragging","rag","help","security","stranger"],
+        "responses": ["Please quickly report your problem at security room.It is near the auditirium"],
+        "context": [""]
+       },
+       {"tag": "auditirium",
+        "patterns": ["auditirium","dance", "singing", "event", "festival", "chief guest","stands","stage","audience"],
+        "responses": ["We have a new auditirium. Location: https://www.google.com/maps/place/VNIT+Auditorium/@21.1245868,79.0490442,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4c077319fa9a5:0xa10c6d9fda63c623!8m2!3d21.1245818!4d79.0512382"],
+        "context": [""]
+       },
+       {"tag": "CSE_3rd",
+        "patterns": ["cse 3 semester","cse 3 sem"],
+        "responses": ["Link for 3rd semester: https://drive.google.com/drive/folders/1PU_wsqI-rCaA4G_oDXGXs6GRBVOkC4P9"],
+        "context": [""]
+       },
+       {"tag": "CSE_4th",
+        "patterns": ["cse 4 semester","cse 4 sem"],
+        "responses": ["Link for 4th semester: https://drive.google.com/drive/folders/1kjATwHSDGYN4loALOtK468ajZUHcIdV7"],
+        "context": [""]
+       },
+       {"tag": "CSE_5th",
+        "patterns": ["cse 5 semester","cse 5 sem"],
+        "responses": ["Link for 4th semester: https://drive.google.com/drive/folders/1g-hFFeiQyGzQpRPf-VNtl5__xame-MxZ"],
+        "context": [""]
+       },
+       {"tag": "CSE_6th",
+        "patterns": ["cse 6 semester","cse 6 sem"],
+        "responses": ["Link for 6th semester: https://drive.google.com/drive/folders/11NpkjWYu7_HrTe1Ztg2Q9F7aE_RjDL1l"],
+        "context": [""]
+       },
+       {"tag": "CSE_7th",
+        "patterns": ["cse 7 semester","cse 7 sem"],
+        "responses": ["Link for 7th semester: https://drive.google.com/drive/folders/1ZWKd6u3amDY6Km_RD3fViOXRCWMpigyu"],
+        "context": [""]
+       },
+       {"tag": "CSE_8th",
+        "patterns": ["cse 8 semester","cse 8 sem"],
+        "responses": ["Link for 8th semester: https://drive.google.com/drive/folders/1w5RHXwAidXVM-NgDGKxutOVLpYLVCoNV"],
+        "context": [""]
+       },
+       {"tag": "CSE_dbms",
+        "patterns": ["DBMS","DBMS link","DBMS meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/ParagDeshpande"],
+        "context": [""]
+       },
+       {"tag": "CSE_dspd",
+        "patterns": ["DSPD","DSPD link","DSPD meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/RBKeskar"],
+        "context": [""]
+       },
+       {"tag": "CSE_ivp",
+        "patterns": ["IVP","IVP link","IVP meeting","OS","OS link","OS meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/PraveenKumar"],
+        "context": [""]
+       },
+       {"tag": "CSE_cn",
+        "patterns": ["CN","CN link","CN meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/AnshulAgarwal"],
+        "context": [""]
+       },
+       {"tag": "CSE_lp",
+        "patterns": ["LP","LP link","LP meeting","TOC","TOC link","TOC meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/ManishKurekar"],
+        "context": [""]
+       },
+       {"tag": "CSE_se",
+        "patterns": ["SE","SE link","SE meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/AnilMokhade"],
+        "context": [""]
+       },
+       {"tag": "CSE_nft",
+        "patterns": ["NFT","NFT link","NFT meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/PoonamSharma"],
+        "context": [""]
+       },
+       {"tag": "CSE_cpl",
+        "patterns": ["CPL","CPL link","CPL meeting"],
+        "responses": ["https://vnit.webex.com/webappng/sites/vnit/dashboard/pmr/UADesphande"],
+        "context": [""]
+       } ,
+
+      {
+        "tag": "facts",
+        "patterns": [
+          "Tell me some cool facts",
+          "facts",
+          "factual information",
+          "some unknown knowledge",
+          "Tell me something I don't know!",
+          "Tell me something new",
+          "fun facts"
+        ],
+        "responses": [
+          "Nagpur is also know as Orange City",
+          "Nagpur is the winter capital of Maharashtra",
+          "The Red Fort was once white",
+          "A rainbow at night is called a moonbow",
+          "There are an estimated 400 million dogs in the world!",
+          "Oxygen is the most common element in the Earth's crust.",
+          "The billionth digit of pi is 9.",
+          "In a room of 23 people there’s a 50% chance that two people have the same birthday.",
+          "If you shuffle a deck of cards properly, it’s more than likely that the exact order of the cards you get has never been seen before in the whole history of the universe.",
+          "Saturn has 150 moons"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "proverbs",
+        "patterns": [
+          "Tell me a proverb",
+          "proverb",
+          "food for thoughts",
+          "witty statements",
+          "moral wisdom",
+          "give me some good quotes",
+          "cool thoughts",
+          "folklore",
+          "good sayings",
+          "quotes",
+          "quotations",
+          "advice"
+        ],
+        "responses": [
+          "Many hands make light work, teamwork is vital for a student",
+          "Remember, Honesty is the best policy",
+          "The grass always seems greener on the other side of the fence",
+          "Don’t judge a book by its cover",
+          "Actions always speak louder than words",
+          "Empty barrels make the most noise",
+          "The early bird catches the worm",
+          "The squeaky wheel gets the grease, always get your concerns cleared",
+          "It’s better to be safe than sorry",
+          "Learn to walk before you run, baby steps young padawan",
+          "Better late than never, get those submissions in",
+          "It’s no use crying over spilt milk, always look forward",
+          "Do or do not, there is no try!"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "music",
+        "patterns": [
+          "Do you have any music recommendations",
+          "Music recommendations",
+          "Good Music",
+          "Good beats to listen to",
+          "listen to music",
+          "good listen",
+          "Latest beats",
+          "Music with good vibes",
+          "EDM",
+          "rap",
+          "hip hop",
+          "Pop"
+        ],
+        "responses": [
+          "I always like listening to Lofi Beats",
+          "Vivaldi is always a classic!",
+          "Sinatra if you want some OG vibes!",
+          "Louis Armstrong if you want to jazz it up!",
+          "Inertia by Richard Lacy is always a good listen!",
+          "I would recommend trying out the Synth genre",
+          "If you like music, you will like Wonderwall",
+          "Pink Floyd will give you a different vibe!",
+          "Classical Music is always a good companion for sutdying",
+          "EDM if you are in a mood to party!",
+          "Lil Nas X is all the buzz right now!",
+          "Section.80 by Kendrick is a lyrical masterpiece"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "hangouts",
+        "patterns": [
+          "Are there any good places to hang out?",
+          "Any cool hangouts nearby?",
+          "Any good places to chill?",
+          "hotspots",
+          "find places to party",
+          "find places to eat",
+          "break time",
+          "food time",
+          "sweet food",
+          "hangouts"
+        ],
+        "responses": [
+          "VNIT Cafe is always my goto!",
+          "Mad Fries is always lit!",
+          "Dominoes is always nice!",
+          "I would recommend Cluckers!",
+          "How about Burger Singh",
+          "Mocha always gives me cool vibes",
+          "The Pancake Story is very good!",
+          "How about Chocolate Room",
+          "You can try Icing on the Cake",
+          "Illusions Cafe is the where all the buzz is right now!",
+          "Ninties Cafe for that OG vibe!"
+        ],
+        "context": [
+          ""
+        ]
+      },
+      {
+        "tag": "study_help",
+        "patterns": [
+          "Help me with my homework",
+          "Is there anything you can help me with?",
+          "Can you give me some resources for studying?", 
+          "What support is offered for studying?", 
+          "Are there any provisions for study support?", 
+          "Can you give me any guides for studying", 
+          "Can you mentor me while studying", 
+          "Is there anything you can help me with?",
+          "Study Material",
+          "Study Guides",
+          "Guides for Studying"
+        ],
+        "responses": [
+          "Coursera is good online platform for taking new courses.",
+          "edX is a good informative platform",
+          "Khan Academy is sure to solve all your doubts!",
+          "Wikipedia is always a good beginning place",
+          "Quizlet can help you prepare for your coming exams",
+          "As a college student, you will appreciate the wealth of online material provided by Open Culture"
+        ],
+        "context": [
+          ""
+        ]
+      }
+    ]
+  }

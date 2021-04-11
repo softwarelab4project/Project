@@ -1,0 +1,10 @@
+flask
+gunicorn
+h5py
+Jinja2
+Keras
+numpy
+utils
+nltk
+scipy
+tensorflow-cpu
