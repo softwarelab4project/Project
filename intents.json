@@ -1,73 +1,235 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
-        },
-        {"tag": "noanswer",
-         "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
-        },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
-         "context": [""]
-        },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
-         "context": [""]
-        },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
-         "context": [""]
-        },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
-        },
-        {"tag": "search_blood_pressure_by_patient_id",
-         "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient"],
-         "context": [""]
-        },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
-        },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
-         "context": [""]
-        },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
-        },
-        {"tag": "search_hospital_by_params",
-         "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
-        },
-        {"tag": "search_hospital_by_type",
-         "patterns": [],
-         "responses": ["Loading hospital details"],
-         "context": [""]
-        }
-   ]
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "Hello there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What is your purpose?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered",
+        "Help me"
+      ],
+      "responses": [
+        "I can guide you through resources for studying, find hotspots near the college, cheer you up with some fun facts and jokes, manage your timetable and a lot more!",
+        "Provide you help with college related activites, I can",
+        "42",
+        "I am the goto tool for assisting freshers to get accomodated with VNIT and Nagpur",
+        "I can make your day by telling you a joke!",
+        "Would you like to hear a fun fact?",
+        "I can keep track of your timetable",
+        "I can provide you with good study resources",
+        "I can keep track of college events!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "facts",
+      "patterns": [
+        "Tell me some cool facts",
+        "facts",
+        "factual information",
+        "some unknown knowledge",
+        "Tell me something I don't know!",
+        "Tell me something new",
+        "fun facts"
+      ],
+      "responses": [
+        "Nagpur is also know as Orange City",
+        "Nagpur is the winter capital of Maharashtra",
+        "The Red Fort was once white",
+        "A rainbow at night is called a moonbow",
+        "There are an estimated 400 million dogs in the world!",
+        "Oxygen is the most common element in the Earth's crust.",
+        "The billionth digit of pi is 9.",
+        "In a room of 23 people there’s a 50% chance that two people have the same birthday.",
+        "If you shuffle a deck of cards properly, it’s more than likely that the exact order of the cards you get has never been seen before in the whole history of the universe.",
+        "Saturn has 150 moons"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "proverbs",
+      "patterns": [
+        "Tell me a proverb",
+        "proverb",
+        "food for thoughts",
+        "witty statements",
+        "moral wisdom",
+        "give me some good quotes",
+        "cool thoughts",
+        "folklore",
+        "good sayings",
+        "quotes",
+        "quotations",
+        "advice"
+      ],
+      "responses": [
+        "Many hands make light work, teamwork is vital for a student",
+        "Remember, Honesty is the best policy",
+        "The grass always seems greener on the other side of the fence",
+        "Don’t judge a book by its cover",
+        "Actions always speak louder than words",
+        "Empty barrels make the most noise",
+        "The early bird catches the worm",
+        "The squeaky wheel gets the grease, always get your concerns cleared",
+        "It’s better to be safe than sorry",
+        "Learn to walk before you run, baby steps young padawan",
+        "Better late than never, get those submissions in",
+        "It’s no use crying over spilt milk, always look forward",
+        "Do or do not, there is no try!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "Do you have any music recommendations",
+        "Music recommendations",
+        "Good Music",
+        "Good beats to listen to",
+        "listen to music",
+        "good listen",
+        "Latest beats",
+        "Music with good vibes",
+        "EDM",
+        "rap",
+        "hip hop",
+        "Pop"
+      ],
+      "responses": [
+        "I always like listening to Lofi Beats",
+        "Vivaldi is always a classic!",
+        "Sinatra if you want some OG vibes!",
+        "Louis Armstrong if you want to jazz it up!",
+        "Inertia by Richard Lacy is always a good listen!",
+        "I would recommend trying out the Synth genre",
+        "If you like music, you will like Wonderwall",
+        "Pink Floyd will give you a different vibe!",
+        "Classical Music is always a good companion for sutdying",
+        "EDM if you are in a mood to party!",
+        "Lil Nas X is all the buzz right now!",
+        "Section.80 by Kendrick is a lyrical masterpiece"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "hangouts",
+      "patterns": [
+        "Are there any good places to hang out?",
+        "Any cool hangouts nearby?",
+        "Any good places to chill?",
+        "hotspots",
+        "find places to party",
+        "find places to eat",
+        "break time",
+        "food time",
+        "sweet food",
+        "hangouts"
+      ],
+      "responses": [
+        "VNIT Cafe is always my goto!",
+        "Mad Fries is always lit!",
+        "Dominoes is always nice!",
+        "I would recommend Cluckers!",
+        "How about Burger Singh",
+        "Mocha always gives me cool vibes",
+        "The Pancake Story is very good!",
+        "How about Chocolate Room",
+        "You can try Icing on the Cake",
+        "Illusions Cafe is the where all the buzz is right now!",
+        "Ninties Cafe for that OG vibe!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "study_help",
+      "patterns": [
+        "Help me with my homework",
+        "Is there anything you can help me with?",
+        "Can you give me some resources for studying?", 
+        "What support is offered for studying?", 
+        "Are there any provisions for study support?", 
+        "Can you give me any guides for studying", 
+        "Can you mentor me while studying", 
+        "Is there anything you can help me with?",
+        "Study Material",
+        "Study Guides",
+        "Guides for Studying"
+      ],
+      "responses": [
+        "Coursera is good online platform for taking new courses.",
+        "edX is a good informative platform",
+        "Khan Academy is sure to solve all your doubts!",
+        "Wikipedia is always a good beginning place",
+        "Quizlet can help you prepare for your coming exams",
+        "As a college student, you will appreciate the wealth of online material provided by Open Culture"
+      ],
+      "context": [
+        ""
+      ]
+    }
+  ]
 }
