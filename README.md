@@ -41,7 +41,7 @@ We aim to make an application that will cater towards students of colleges, as a
     . Ujjwal Sharma
 
 ## Server And Deployment : 
-    . Kaustobh Kathare
+    . Kaustubh Kathare
     
 The project is deployed on heroku
 
